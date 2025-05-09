@@ -30,7 +30,7 @@ jobs:
           echo "${{ steps.get_token.outputs.token }}" > token.txt
 
       - name: Upload token file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: oidc-token
           path: token.txt
